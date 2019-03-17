@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color = "primary">
+    <ion-title>
+      Air Quality Index by city
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+	<ion-item>
+		<ion-label>select your city</ion-label>
+		
+	<ionic-selectable 
+		item-content
+		[(ngModel)] = "city"
+		[items]="cities"
+		itemValueField="id"
+		itemTextField="name"
+		[canSearch] = "true"
+		(onChange)= "userChanged($event)">
+		</ionic-selectable>
+	</ion-item>
+<!-- 
+	<button ion-button color="dark" (click)="openFromCode($event)">
+		{{'HomePage.SearchButton' | translate }}
+	</button> -->
+
+ 
+</ion-content>
+
+	
