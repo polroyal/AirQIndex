@@ -276,5 +276,5 @@ export class HomePage {
 
 		this.selectComponent.open();
 	}
-
+    
  }
